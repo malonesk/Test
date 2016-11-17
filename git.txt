@@ -1,0 +1,22 @@
+﻿commande git : 
+git clone https://github.com/malonesk/Test.git
+
+Usage:
+git action parametres 
+Aide : man ou git help action
+	Ex : git help clone, man git clone
+
+Configuration :
+git config [type] nom_param [valeur_param]
+	type : 	 --system (pour tout les users du system) /etc/gitconfig,
+			 --global (pour tt projets du user) ~/.gitconfig, 
+			 --local (pour un projet (depot) donné) DEPOT/.git/config.
+	ex: git config --global user.name "Jeremy Tran"
+	    git config --global color.ui auto //coloration syntaxique
+
+// Modifier créer un nouveau fichier
+git status
+git diff (fais la difference entre un fich du rep de travail et l'index
+git diff --word-diff (difference calculée par mot)
+git add fichier
+
