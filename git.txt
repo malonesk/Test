@@ -98,6 +98,9 @@ git diff (voir)
 >>> experimental
 editer les fichiers, puis git commit -a
 
+supprimer une branche : git branch -d experimental (d comme delete)
+forcer la suppression : git branch -D mauvaise-idee (supprimer meme si les commits ne sont pas rattachés a la branche principale
+
 
 
 
