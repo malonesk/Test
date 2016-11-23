@@ -72,9 +72,20 @@ git stash drop (supprimer)
 git stash list (lister tout ce qu'on a mis de coté)
 la stash peut contenir plusieurs modifications (ajouter sous forme de pile, on recupere donc le dernier ajouter avec pop)
 
+LES BRANCHES
+branche master (principale)
+branche experimentale
+branche par développeur
+branche principale (v1.0, v2.0...) puis creation branche pour v1.1 (ex correction de bug)
 
+git branch experimental (creation)
+git branch (lister les branches)
+changer de branche : git checkout experimental
+// // A REGARDER git cherry-pick commit (bouger un commit d'une branche à l'autre (copie))
 
-
+editer des fichiers et les enregistrer
+git commit -a   -> a partir de la, si l'on est dan la branche exp, les 2 branches commencent à divergées
+on revient sur master : git checkout master
 
 
 
