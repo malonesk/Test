@@ -86,6 +86,17 @@ changer de branche : git checkout experimental
 editer des fichiers et les enregistrer
 git commit -a   -> a partir de la, si l'on est dan la branche exp, les 2 branches commencent à divergées
 on revient sur master : git checkout master
+editer les fichiers : git commit -a
+
+git merge experimental (fusionner 2 branches)
+/!\ possibilité de conflits -> dans ce cas, à règler manuellement
+
+si conflits : 
+git diff (voir)
+<<< HEAD ... version de master
+===
+>>> experimental
+editer les fichiers, puis git commit -a
 
 
 
