@@ -57,6 +57,18 @@ Pour voir les déplacements :
 git log --summary
 git log --summary -M (retrouve les déplacements effectués)
 
+parfois, on a des fichiers qu'on ne souhaite pas enregistrer
+Ex : *.class, *.o, *~, fichier_secret 
+On peut lister dans un fichier nommé : git ignore (dans le .ignore : un fichier par ligne (accepte la sytaxe etoile : ex: *.class)
+dans la liste : introduction de commentaires possibles grâce à #
+le fichier .gitignore est lui enrégistré 
+// man git ignore
+
+Mettre du travail de coté:
+
+
+
+
 
 
 
