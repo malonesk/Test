@@ -65,6 +65,12 @@ le fichier .gitignore est lui enrégistré
 // man git ignore
 
 Mettre du travail de coté:
+git stash (sauvegarde)
+git stash show (voir)
+git stash pop (permet de reprendre)
+git stash drop (supprimer)
+git stash list (lister tout ce qu'on a mis de coté)
+la stash peut contenir plusieurs modifications (ajouter sous forme de pile, on recupere donc le dernier ajouter avec pop)
 
 
 
