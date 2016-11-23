@@ -19,4 +19,46 @@ git status
 git diff (fais la difference entre un fich du rep de travail et l'index
 git diff --word-diff (difference calculée par mot)
 git add fichier
+git diff --cached (diff entre cache et dépôt)
+git commit (ouvre un editeur (par defaut, changeable) pour editer un commit (ici, vi ou nano)
+appronfondir l'utilisation de vi :
+un mode insertion pour taper le texte, un mode commande 
+commande → insertion : i
+insertion → commande : echap
+commande ::wq (write + quit) (se fait aussi grâce à ZZ)
+		:q! (quit force)
 
+git commit -a (fait automatiquement le add pour tout les fichiers modifiés (mais pas les nouveaux fichiers))
+git commit -m ''Message…'' (ou git commit -am ''message'') (dans le cas d'un commit court)
+gitk (affiche la fenetre graphique des commit)
+git show (affiche le dernier commit)
+git log (affiche tous les commit)
+git log -p (afficher les modifications en plus)
+git log --stat --summary
+git log --oneline (id commit + premiere ligne message commit)
+
+Envoyer les commit vers le serveur distant :
+git push
+Recevoir depuis le depot distant :
+git fetch (envoie les fichier dans le depot local)
+git pull (envoie les fichiers dans le depot puis dans le rep de travail) // en pratique, pull plus souvent utiliser (pull = fetch + merge)
+
+Exemple de commits :
+faire des 'petits' commit au fur et a mesure (correction d'un bug peut etre décrit par plusieurs petit commit, avec les infos pourquoi comment…)
+
+Ajouter/supprimer des fichiers
+ajout : git add fichier    (pusi git commit pour valider (git add ajoutant le fichier dans l'index)
+supression : git rm fichier (puis git commit)
+
+Déplacer/renommer
+git mv source destination (git commit) (enregistrer comme suppression + ajout)
+
+Pour voir les déplacements : 
+git log --summary
+git log --summary -M (retrouve les déplacements effectués)
+
+
+
+
+
+ 
