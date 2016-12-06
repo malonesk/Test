@@ -132,7 +132,7 @@ supprime les 3 derniers commit
 	- réordonner
 	- completer
 	-fusionner :squash, fixup
-	- réécrire le message : reward
+	- réécrire le message : reword
 	- séparer
 
 git rebase -i(interactif) origin/master
