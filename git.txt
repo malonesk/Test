@@ -101,6 +101,12 @@ editer les fichiers, puis git commit -a
 supprimer une branche : git branch -d experimental (d comme delete)
 forcer la suppression : git branch -D mauvaise-idee (supprimer meme si les commits ne sont pas rattachés a la branche principale
 
+- Faire des commits propres
+	- selectionner ce qu'on met dans un commit
+	git add -p [fichier...]
+	-> interactif, réponses : yes(y), no(n), split(s), quit(q), all			(a),...,edit(e)
+
+
 
 
 
