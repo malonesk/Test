@@ -131,8 +131,8 @@ supprime les 3 derniers commit
 	- supprimer
 	- réordonner
 	- completer
-	-fusionner
-	- réécrire le message
+	-fusionner :squash, fixup
+	- réécrire le message : reward
 	- séparer
 
 git rebase -i(interactif) origin/master
