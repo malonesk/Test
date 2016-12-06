@@ -105,6 +105,46 @@ forcer la suppression : git branch -D mauvaise-idee (supprimer meme si les commi
 	- selectionner ce qu'on met dans un commit
 	git add -p [fichier...]
 	-> interactif, réponses : yes(y), no(n), split(s), quit(q), all			(a),...,edit(e)
+	-> git commit -m, puis git push
+
+- Modifier le dernier commit
+	- git commit --amend : le dernier commit est remplacé
+	/!\ à eviter si les commits on déja été partagés
+	on peut faire git commit --amend -m "message" ??
+
+- Supprimer le dernier commit 
+	git reset [mode] <commit>
+	-> le sommet de la branche courante est réinitialisée au commit donné
+	mode : 	--soft 				: seul le dépot est reinit
+			[default] --mixed 	: dépot et index reinitialisé
+			--hard 				: depot, index et fichiers sont reinit (on perd les modif)
+Exemple: git reset --soft HEAD^
+on peut refaire le commit avec git commit
+Exemple2: git reset --hard HEAD~3
+supprime les 3 derniers commit
+
+- dans le cas ou un dev a push un commit que l'on a pas, on essaye de push, ça veut pas, on pourrait pull mais ça creerait une nouvelle branche
+- Eviter les <<merge>> lors d'un pull : git pull --rebase
+
+-Modifier les derniers commits
+	- ajouter 
+	- supprimer
+	- réordonner
+	- completer
+	-fusionner
+	- réécrire le message
+	- séparer
+
+git rebase -i(interactif) origin/master
+
+Un editeur est lancé avec la liste des commandes
+pick 4
+pick 5 on veut reodronner 5 a 6 et 6 a 5
+pick 6
+pick 7 (on veut le suppr)
+pick 8
+fixup 9 on veut fusionner 8 et 9 
+
 
 
 
